@@ -27,7 +27,7 @@ nav a:hover {
 
 header {
     background-image: url('background-image.jpg');
-    /* Replace with your image */
+
     background-size: cover;
     color: rgb(19, 18, 18);
     text-align: center;
@@ -49,21 +49,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 50px;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    nav a {
-        float: none;
-        width: 100%;
-    }
 }
