@@ -193,7 +193,7 @@ footer {
   
   .grid-item {
     animation: fadeIn 0.5s ease forwards;
-    opacity: 0; /* Initially hide the grid items */
+    opacity: 0;
   }
   
 
