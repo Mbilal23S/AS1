@@ -45,9 +45,9 @@ section {
 .home {
     height: 100vh;
     width: 100%;
-    display: flex;
+    display:block;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center;
     gap: 35px;
 
 }
@@ -55,7 +55,7 @@ section {
 .home-img {
     width: 350px;
     height: 380px;
-    object-fit: contain;
+    object-fit:cover;
     display: flex;
 }
 
@@ -159,21 +159,43 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    justify-content: center;
+    margin: 20px;
   }
   
   .grid-item {
     text-align: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
   }
   
   .grid-item img {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 8px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 6px black;
+    transition: transform 0.3 ease;
   }
+  .grid-item img:hover{
+    transform:scale(1.05);
+  }
+
+   /* Animation */
+   @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .grid-item {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0; /* Initially hide the grid items */
+  }
+  
 
   /* videodemo*/
 
