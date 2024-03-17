@@ -71,9 +71,6 @@ section {
 
 }
 
-
-
-/*Contact*/
 body {
 
     margin: 0;
@@ -219,3 +216,98 @@ footer {
     height: 70%;
 }
 
+@media(max-width:600px) {
+    #showNav {
+        display: block;
+    }
+
+    :root {
+        --h1-font: 3.8rem;
+        --h2-font: 2.4rem;
+        --p-font: 11px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #25262d;
+        padding: 20px 10px;
+        gap: 0.6rem;
+        text-align: left;
+        transition: all 0.7s;
+
+    }
+
+    .navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100vh;
+
+        flex-direction: column;
+        background: #25262d;
+        padding: 20px 10px;
+        gap: 0.6rem;
+        text-align: left;
+        transition: all 0.7s;
+    }
+
+    .navbar a {
+        font-size: 27px;
+        font-weight: 500;
+
+    }
+
+    .navbar.open {
+        right: 0;
+
+    }
+
+    form .send-btn {
+        width: 50%;
+    }
+
+    #clicked .on {
+        display: flex;
+    }
+
+    #clicked .off {
+        display: none;
+    }
+
+    #clicked:target .on {
+        display: none;
+    }
+
+    #clicked:target .off {
+        display: flex;
+    }
+
+
+    .navbar {
+        display: none;
+    }
+
+
+    #clicked:target .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .h-btn {
+        display: none;
+    }
+
+    .h-text h2 {
+        margin-left: 2.2em;
+    }
+}
