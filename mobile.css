@@ -1,0 +1,29 @@
+/* Styles for mobile view */
+@media (max-width: 600px) {
+    main.contact {
+        padding: 0.625em; 
+    }
+
+    form {
+        max-width: 100%; 
+        margin: 0 auto; 
+        padding: 15px; 
+    }
+
+    label {
+        margin-bottom: 0.9em; 
+    }
+
+    input,
+    textarea {
+        width: calc(100% - 1.25em); 
+        padding: 0.5em; 
+        margin-bottom: 0.75em; 
+        border-radius: 0.25em;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%; 
+    }
+}

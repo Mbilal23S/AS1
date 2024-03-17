@@ -216,6 +216,8 @@ footer {
     height: 70%;
 }
 
+
+
 @media(max-width:600px) {
     #showNav {
         display: block;
